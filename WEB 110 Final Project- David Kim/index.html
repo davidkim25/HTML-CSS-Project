@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<!--
+    WEB 110 Learning Web Design
+    Web Design Project
+    Author: David Kim
+-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David's Guide to Blackjack</title>
+
+    <link href="css/blackjack_project_layout_index.css" rel="stylesheet">
+    <link href="css/blackjack_project_styles_index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/blackjack_top_banner_1172x318.jpg" alt="Blackjack logo" width="300" height="200">    
+
+        <nav class="topnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basic_guide.html">Basic Guide</a></li>
+                <li><a href="strategies.html">Strategies</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article id="introduction">
+            <h1>Introduction to Blackjack</h1>
+            <section id="intro">
+                <p> Blackjack, also commonly known as Twenty-one, is a popular card game played against a dealer. 
+                The object of this game is fairly simple:  You win by getting closer to 21 than the dealer without going over 21. 
+                Numeric cards keep their numeric value while face cards (Jack, Queen, King) are all valued at 10. 
+                Aces are special in that they can be either 1 or 11, decided by the card holder.
+                </p>
+                <picture>
+                    <img src="images/blackjack_membership_696x391.jpg" alt="blackjack playing hand" width="360" height="280">
+                </picture>
+            </section>
+
+            <section>
+                <table>
+                    <colgroup></colgroup>
+                    <colgroup span="3"></colgroup>
+
+                    <thead>
+                        <th rowspan="2"> &nbsp;</th>
+                        <th colspan="3"> Numerical Value Equivalents</th>
+                        <tr>
+                            <th>1</th>
+                            <th>10</th>
+                            <th>11</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Ace</th>
+                            <td>x</td>
+                            <td>&nbsp;</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">King</th>
+                            <td>&nbsp;</td>
+                            <td>x</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Queen</th>
+                            <td>&nbsp;</td>
+                            <td>x</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jack</th>
+                            <td>&nbsp;</td>
+                            <td>x</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <p> Blackjack can be played recreationally at a social gathering or more competitively with wagers at a casino. 
+                If you want to learn more about Blackjack and discover how to increase your odds at the game, you&#39;ve come to the right place! <br>
+                <br>
+                Explore my basic guide and strategies to Blackjack by clicking on navigations above. 
+                </p>
+            </section>          
+        </article>
+
+        <article id="signup">
+            <h1>Join our Group</h1>                
+            <p>Join us for monthly newsletters and game nights!</p>
+            <section id="form">
+                <form action="confirmation.php" method="POST">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <ul>
+                            <li><label for="form-name">Name:</label> <input type="text" name="username" id="form-name"></li>
+                            <li><label for="form-tel">Phone:</label> <input type="tel" name="telephone" id="form-tel"></li>
+                            <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+                        </ul>
+                        <p>
+                            <input type="submit" value="Submit">
+                            <input type="reset">
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <small>
+            DurhamTech WEB 110 Project by David Kim <br>
+            Content protected by the Fair Use and Copyright for Education
+        </small>
+    </footer>
+
+</body>
+</html>
+
+

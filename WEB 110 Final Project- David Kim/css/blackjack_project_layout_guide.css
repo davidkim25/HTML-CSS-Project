@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* Main Frame */
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    min-width: 480px;
+}
+
+body > header {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+
+/* lists */
+body > main > ul > li {
+    padding: 0px 0px 3px 0px;
+}
+
+body > main > ul > li > ul > li {
+    padding: 3px 0px;
+}
+
+/* picture */
+body > main > picture > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 10px 0px;
+}
+
+/* banner */
+body > header > img {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+body > main {
+    padding: 0 2.5%;
+}
+
+body > main > h3 {
+    padding: 0;
+    margin: 0;
+} 
+
+/* Navigation List */
+nav {
+    display: table;
+    width: 100%;
+}
+
+nav > ul {
+    display: table-row;
+}
+
+nav > ul > li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    display: block;
+}
+
+/* Video */
+body main div#vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* Footer */
+body > footer {
+    width: 100%;
+}
+
+/*media query for nav*/
+@media screen and (min-width: 480px) {
+	nav ul li {
+		flex: none;		/* equivalent to flex: 0 0 auto*/
+	}
+	nav ul {
+		justify-content: center;
+	}
+}

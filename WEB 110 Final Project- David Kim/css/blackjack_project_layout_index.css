@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* Main Frame */
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    min-width: 480px;
+}
+
+body > header {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+
+/* banner */
+body > header > img {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+body > main {
+    padding: 0 2.5%;
+}
+
+/* Navigation Lists */
+nav {
+    display: table;
+    width: 100%;
+}
+
+nav > ul {
+    display: table-row;
+}
+
+nav > ul > li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    display: block;
+}
+
+/* Footer */
+body > footer {
+    width: 100%;
+}
+
+/* Index Body Element */
+
+body > main > article#introduction > section#intro > picture {
+    float: right;
+    padding: 10px;
+} 
+
+body > main > article#signup form {
+    display: block;
+    width: 50%;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+body > main > article#signup form input{
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+/*media query for nav*/
+@media screen and (min-width: 480px) {
+	nav ul li {
+		flex: none;		/* equivalent to flex: 0 0 auto*/
+	}
+	nav ul {
+		justify-content: center;
+	}
+}
+
+
+
